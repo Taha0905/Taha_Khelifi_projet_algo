@@ -19,7 +19,7 @@
         </Grid.RowDefinitions>
 
         <!-- grid Exo1 -->
-        <Grid Grid.Row="0" Grid.Column="0" Background="Gray" Margin="10">
+        <Grid Grid.Row="0" Grid.Column="0" Background="red" Margin="10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -32,7 +32,7 @@
         </Grid>
 
         <!-- grid Exo2 -->
-        <Grid Grid.Row="0" Grid.Column="1" Background="Black" Margin="10">
+        <Grid Grid.Row="0" Grid.Column="1" Background="Orange" Margin="10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -45,8 +45,21 @@
         </Grid>
 
 
+        <!-- grid Exo3 -->
+        <Grid Grid.Row="0" Grid.Column="3" Background="Yellow" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+
         <!-- grid Exo1 -->
-        <Grid Grid.Row="0" Grid.Column="0" Background="Gray" Margin="10">
+        <Grid Grid.Row="1" Grid.Column="0" Background="Green" Margin="10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -61,20 +74,6 @@
         <!-- grid Exo1 -->
         <Grid Grid.Row="0" Grid.Column="0" Background="Gray" Margin="10">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-        </Grid>
-
-        <!-- grid Exo1 -->
-        <Grid Grid.Row="0" Grid.Column="0" Background="Gray" Margin="10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
