@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Taha_Khelifi_projet_algo"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-  
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -29,6 +29,14 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="exercice 1" Margin="10"/>
+            <TextBox Name="TB_1" Grid.Row="0" Grid.Column="1" Margin="10"/>
+            <TextBox Name="TB_2" Grid.Row="0" Grid.Column="2" Margin="10"/>
+            <Button Name="BTN_Compare" Grid.Row="1" Grid.Column="0" Margin="10" Content="Compare" Background="Red" Click="BTN_Compare_Click"/>
+            <TextBox Name="TB_Resultat" Grid.Row="1" Grid.Column="1" Margin="10,10,10,10" Grid.ColumnSpan="2"/>
+
+
         </Grid>
 
         <!-- grid Exo2 -->
@@ -58,7 +66,7 @@
             </Grid.RowDefinitions>
         </Grid>
 
-        <!-- grid Exo1 -->
+        <!-- grid Exo4 -->
         <Grid Grid.Row="1" Grid.Column="0" Background="Green" Margin="10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -71,8 +79,8 @@
             </Grid.RowDefinitions>
         </Grid>
 
-        <!-- grid Exo1 -->
-        <Grid Grid.Row="2" Grid.Column="1" Background="Pink" Margin="10">
+        <!-- grid Exo5 -->
+        <Grid Grid.Row="2" Grid.Column="1" Background="Blue" Margin="10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -82,6 +90,6 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
         </Grid>
-        
+
     </Grid>
 </Window>
