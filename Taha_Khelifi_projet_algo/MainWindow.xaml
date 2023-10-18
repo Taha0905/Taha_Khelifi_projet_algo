@@ -33,9 +33,8 @@
             <Label Grid.Row="0" Grid.Column="0" Content="exercice 1" Margin="10"/>
             <TextBox Name="TB_1" Grid.Row="0" Grid.Column="1" Margin="10"/>
             <TextBox Name="TB_2" Grid.Row="0" Grid.Column="2" Margin="10"/>
-            <Button Name="BTN_Compare" Grid.Row="1" Grid.Column="0" Margin="10" Content="Compare" Background="Red" Click="BTN_Compare_Click"/>
-            <TextBox Name="TB_Resultat" Grid.Row="1" Grid.Column="1" Margin="10,10,10,10" Grid.ColumnSpan="2"/>
-
+            <Button Name="BTN_Compare" Grid.Row="1" Grid.Column="0" Margin="10" Content="Compare" Background="Gray" Click="BTN_Compare_Click"/>
+            <TextBox Name="TB_Resultat" Grid.Row="1" Grid.Column="1" Margin="10,10,10,10" Grid.ColumnSpan="2" IsEnabled="False" Text="exemple 3 et 6"/>
 
         </Grid>
 
@@ -50,6 +49,13 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="exercice 2" Margin="10"/>
+            <TextBox Name="TB_3" Grid.Row="0" Grid.Column="1" Margin="10"/>
+            <TextBox Name="TB_4" Grid.Row="0" Grid.Column="2" Margin="10"/>
+            <Button Name="BTN_2" Grid.Row="1" Grid.Column="0" Margin="10" Content="IMC" Background="Gray" Click="BTN_2_Click"/>
+            <TextBox Name="TB_Resultat2" Grid.Row="1" Grid.Column="1" Margin="10,10,10,10" Grid.ColumnSpan="2" IsEnabled="False" Text="exemple 1,70 et 90"/>
+
         </Grid>
 
 
@@ -64,6 +70,11 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="exercice 3" Margin="10"/>
+            <Button Name="BTN_3" Grid.Row="1" Grid.Column="0" Margin="10" Content="For " Background="Gray" Click="BTN_3_Click"/>
+            <TextBox Name="TB_Resultat3" Grid.Column="1" Margin="10,10,10,10" Grid.ColumnSpan="2" Grid.RowSpan="2" Text="Appuier sur For" />
+
         </Grid>
 
         <!-- grid Exo4 -->
@@ -77,6 +88,11 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="exercice 4" Margin="10"/>
+            <Button Name="BTN_4" Grid.Row="1" Grid.Column="0" Margin="10" Content="Fonction" Background="Gray" Click="BTN_4_Click"/>
+            <TextBox Name="TB_Resultat4" Grid.Column="1" Margin="10,10,10,10" Grid.ColumnSpan="2"  Grid.RowSpan="2" Text="Appuier sur Fonction"/>
+
         </Grid>
 
         <!-- grid Exo5 -->
@@ -89,7 +105,11 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-        </Grid>
 
+            <Label Grid.Row="0" Grid.Column="0" Content="exercice 4" Margin="10"/>
+            <Button Name="BTN_5" Grid.Row="1" Grid.Column="0" Margin="10" Content="Inverse" Background="Gray" Click="BTN_5_Click"/>
+            <TextBox Name="TB_Resultat5" Grid.Column="1" Margin="10,10,10,10" Grid.ColumnSpan="2"  Grid.RowSpan="2" Text="Appuier sur Inverse"/>
+
+        </Grid>
     </Grid>
 </Window>

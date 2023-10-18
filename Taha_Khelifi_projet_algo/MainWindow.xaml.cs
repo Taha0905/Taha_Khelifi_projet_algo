@@ -24,10 +24,12 @@ namespace Taha_Khelifi_projet_algo
         {
             InitializeComponent();
         }
+        //variable exo 1
         double N1 = 0;
         double N2 = 0;
         double Resultat = 0;
 
+        //exo 1
         private void BTN_Compare_Click(object sender, RoutedEventArgs e)
         {
             // Convertir le texte des TextBox en nombres
@@ -58,5 +60,93 @@ namespace Taha_Khelifi_projet_algo
                 TB_Resultat.Text = "Erreur de saisie";
             }
         }
-    }  
+
+        //exo 2
+        private void BTN_2_Click(object sender, RoutedEventArgs e)
+        {
+            // Récupérer la taille et le poids à partir des TextBox
+            if (double.TryParse(TB_3.Text, out double taille) && double.TryParse(TB_4.Text, out double poids))
+            {
+                // Calculer l'indice de masse corporelle (IMC)
+                double IMC = poids / (taille * taille);
+
+                // Afficher le résultat dans TB_Resultat2
+                TB_Resultat2.IsEnabled = true;
+
+                if (IMC < 18)
+                {
+                    TB_Resultat2.Text = "Mince";
+                }
+                else if (IMC >= 18 && IMC < 25)
+                {
+                    TB_Resultat2.Text = "En bonne santé";
+                }
+                else if (IMC >= 25 && IMC < 30)
+                {
+                    TB_Resultat2.Text = "Avoir des kilos en trop";
+                }
+                else
+                {
+                    TB_Resultat2.Text = "Obèse";
+                }
+            }
+            else
+            {
+                // Gérer les cas où la saisie n'est pas un nombre valide
+                TB_Resultat2.IsEnabled = true;
+                TB_Resultat2.Text = "Veuillez entrer des valeurs valides pour la taille et le poids.";
+            }
+        }
+
+        //exo 3
+        private void BTN_3_Click(object sender, RoutedEventArgs e)
+        {
+            TB_Resultat3.Text = ""; // Efface le contenu précédent
+
+            // Utilisation d'une boucle for pour itérer de 0 à 15
+            for (int i = 0; i <= 15; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    // Si le nombre est pair (le reste de la division par 2 est 0), affiche "est pair"
+                    TB_Resultat3.Text += $"{i} est pair\n";
+                }
+                else
+                {
+                    // Sinon, le nombre est impair, affiche "est impair"
+                    TB_Resultat3.Text += $"{i} est impair\n";
+                }
+            }
+        }
+
+        //exo 4
+        // Fonction pour trouver le chiffre le plus bas et le chiffre le plus élevé dans un tableau
+        private void TrouverMinMax(int[] tableau)
+        {
+            if (tableau.Length == 0)
+            {
+                // Si le tableau est vide, affiche un message approprié dans le TextBox TB_Resultat4
+                TB_Resultat4.Text = "Le tableau est vide.";
+            }
+            else
+            {
+                // Utilise LINQ pour trouver le chiffre le plus bas (min) et le chiffre le plus élevé (max)
+                int min = tableau.Min();
+                int max = tableau.Max();
+
+                // Affiche le résultat dans le TextBox TB_Resultat4
+                TB_Resultat4.Text = $"Le chiffre le plus bas est {min}, et le chiffre le plus élevé est {max}.";
+            }
+        }
+        private void BTN_4_Click(object sender, RoutedEventArgs e)
+        {
+            {
+                // Tableau de nombres de l'exemple
+                int[] tableauNombres = new int[] { 1, 2, 3, 4, 5 };
+
+                // Appelle la fonction TrouverMinMax avec le tableau de nombres
+                TrouverMinMax(tableauNombres);
+            }
+        }
+    }
 }
