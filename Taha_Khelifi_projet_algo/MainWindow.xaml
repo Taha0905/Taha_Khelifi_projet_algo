@@ -72,8 +72,8 @@
             </Grid.RowDefinitions>
 
             <Label Grid.Row="0" Grid.Column="0" Content="exercice 3" Margin="10"/>
-            <Button Name="BTN_3" Grid.Row="1" Grid.Column="0" Margin="10" Content="For " Background="Gray" Click="BTN_3_Click"/>
-            <TextBox Name="TB_Resultat3" Grid.Column="1" Margin="10,10,10,10" Grid.ColumnSpan="2" Grid.RowSpan="2" Text="Appuier sur For" />
+            <Button Name="BTN_3" Grid.Row="1" Grid.Column="0" Margin="10" Content="P/I" Background="Gray" Click="BTN_3_Click"/>
+            <TextBox Name="TB_Resultat3" Grid.Column="1" Margin="10,10,10,10" Grid.ColumnSpan="2" Grid.RowSpan="2" Text="Appuier sur P/I" />
 
         </Grid>
 
@@ -90,8 +90,8 @@
             </Grid.RowDefinitions>
 
             <Label Grid.Row="0" Grid.Column="0" Content="exercice 4" Margin="10"/>
-            <Button Name="BTN_4" Grid.Row="1" Grid.Column="0" Margin="10" Content="Fonction" Background="Gray" Click="BTN_4_Click"/>
-            <TextBox Name="TB_Resultat4" Grid.Column="1" Margin="10,10,10,10" Grid.ColumnSpan="2"  Grid.RowSpan="2" Text="Appuier sur Fonction"/>
+            <Button Name="BTN_4" Grid.Row="1" Grid.Column="0" Margin="10" Content="MinMax" Background="Gray" Click="BTN_4_Click"/>
+            <TextBox Name="TB_Resultat4" Grid.Column="1" Margin="10,10,10,10" Grid.ColumnSpan="2"  Grid.RowSpan="2" Text="Appuier sur MinMax"/>
 
         </Grid>
 
@@ -100,13 +100,14 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <Label Grid.Row="0" Grid.Column="0" Content="exercice 4" Margin="10"/>
+            <Label Grid.Row="0" Grid.Column="0" Content="exercice 5" Margin="10"/>
             <Button Name="BTN_5" Grid.Row="1" Grid.Column="0" Margin="10" Content="Inverse" Background="Gray" Click="BTN_5_Click"/>
             <TextBox Name="TB_Resultat5" Grid.Column="1" Margin="10,10,10,10" Grid.ColumnSpan="2"  Grid.RowSpan="2" Text="Appuier sur Inverse"/>
 

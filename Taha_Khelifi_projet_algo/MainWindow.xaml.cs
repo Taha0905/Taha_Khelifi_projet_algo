@@ -120,6 +120,7 @@ namespace Taha_Khelifi_projet_algo
         }
 
         //exo 4
+
         // Fonction pour trouver le chiffre le plus bas et le chiffre le plus élevé dans un tableau
         private void TrouverMinMax(int[] tableau)
         {
@@ -147,6 +148,33 @@ namespace Taha_Khelifi_projet_algo
                 // Appelle la fonction TrouverMinMax avec le tableau de nombres
                 TrouverMinMax(tableauNombres);
             }
+        }
+
+        //exo 5
+
+        // Fonction pour inverser une chaîne de caractères
+        private string InverserChaine(string chaine)
+        {
+            // Convertir la chaîne en un tableau de caractères
+            char[] caractères = chaine.ToCharArray();
+
+            // Inverser le tableau de caractères
+            Array.Reverse(caractères);
+
+            // Reconvertir le tableau en une nouvelle chaîne
+            return new string(caractères);
+        }
+        private void BTN_5_Click(object sender, RoutedEventArgs e)
+        {
+
+            // Définir la valeur à inverser
+            string valeurAInverser = "12345";
+
+            // Inverser la valeur en utilisant la fonction InverserChaine
+            string valeurInverse = InverserChaine(valeurAInverser);
+
+            // Afficher la valeur inversée dans TB_Resultat5
+            TB_Resultat5.Text = valeurInverse;
         }
     }
 }
